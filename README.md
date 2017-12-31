@@ -3,7 +3,7 @@
 
 微信小游戏跳一跳上线后一下子火起来，不用烧钱光靠产品体验就轻轻松松拉动活跃用户。试着研究了一下怎样破解顺带研究下小游戏。最后成果就是能够加速每次跳成功的分数，轻轻松松登上朋友圈榜首。排行榜的更新可能有点延迟，也可能是短时间内多次上传高分会被控制。我登录到这个包打了一千多分别人看不到。重新登录打了五百多分，过了会能看到，稳稳的第一😑。
 
-![2017-12-31-hack-wechat-minigame-1.png](//dn-johnwong.qbox.me/images/2017-12-31-hack-wechat-minigame-1.png)
+![2017-12-31-hack-wechat-minigame-1.png](https://dn-johnwong.qbox.me/images/2017-12-31-hack-wechat-minigame-1.png)
 
 ## 准备安装包重签名
 
