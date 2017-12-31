@@ -1,7 +1,9 @@
 # Wechat-minigame-hack
-> 破解微信小游戏跳一跳
+> 破解微信小游戏跳一跳，博客地址[https://johnwong.github.io/mobile/2017/12/31/hack-wechat-minigame.html](https://johnwong.github.io/mobile/2017/12/31/hack-wechat-minigame.html)
 
-微信小游戏跳一跳上线后一下子火起来，不用烧钱光靠产品体验就轻轻松松拉动活跃用户。试着研究了一下怎样破解顺带研究下小游戏。最后成果就是能够加速每次跳成功的分数，轻轻松松登上朋友圈榜首。
+微信小游戏跳一跳上线后一下子火起来，不用烧钱光靠产品体验就轻轻松松拉动活跃用户。试着研究了一下怎样破解顺带研究下小游戏。最后成果就是能够加速每次跳成功的分数，轻轻松松登上朋友圈榜首。排行榜的更新可能有点延迟，也可能是短时间内多次上传高分会被控制。我登录到这个包打了一千多分别人看不到。重新登录打了五百多分，过了会能看到，稳稳的第一😑。
+
+![2017-12-31-hack-wechat-minigame-1.png](//dn-johnwong.qbox.me/images/2017-12-31-hack-wechat-minigame-1.png)
 
 ## 准备安装包重签名
 
@@ -11,6 +13,8 @@
 2. 把包里`Frameworks`下的库拖进工程，这样库才能正常签名。
 3. 为了方便查看沙盒内容，给`Info.plist`增加一项`UIFileSharingEnabled`。
 4. 运行时候如果遇到报错，先`Clean`再`Run`可能会解决问题。
+
+这样的包运行到非越狱机上，一个问题是无法收到通知。这个是签名的原因无法解决，所以这样的包登陆一下装个B就够了，平时不方便使用。
 
 ## 提取小程序文件
 
@@ -48,7 +52,7 @@
 
 接下来就是把修改后的`game.js`打入包里，hook方法`-[EJJavaScriptView evaluateScript:sourceURL:]`，判断参数是`game.js`中的代码时，读取修改后的文件替换。
 
-为了加速的参数可以方便地修改，又加入了[Tweaks](https://github.com/facebook/Tweaks)这个库。
+为了加速的参数可以方便地修改，又加入了[Tweaks](https://github.com/facebook/Tweaks)这个库。修改加速倍率后，需要杀进程再进入才有效。这是因为小程序有缓存，修改了参数再次进入小程序并不会重新启动小程序。
 
 
 过程介绍比较简略，工程是[https://github.com/JohnWong/Wechat-minigame-hack](https://github.com/JohnWong/Wechat-minigame-hack)。
